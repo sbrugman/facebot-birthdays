@@ -1,4 +1,4 @@
-# facebot-birthdays
+# Facebot Birthdays
 Facebook-bot in Robot Framework to automatically send birthday congratulations and poke automatically back. Designed for my Raspberry PI.
 
 ## Features
@@ -7,7 +7,7 @@ Facebook-bot in Robot Framework to automatically send birthday congratulations a
 * Totally uses advanced IT-tools that are used in Software Testing for something way more fun.
 
 ## Background
-![Cartoon](https://github.com/sbrugman/facebot-birthdays/cartoon.jpg)
+![Cartoon](https://raw.githubusercontent.com/sbrugman/facebot-birthdays/master/cartoon.jpg)
 
 ## Installation
 Facebot requires Robot Framework (http://robotframework.org/) to work. With Python's `pip`, installation of Robot Framework is a piece of cake:
