@@ -58,6 +58,6 @@ Press Enter
 Press Keys
     [Arguments]		${Locator}	${Text}
     @{characters}= 	Split String To Characters	${Text}
-    : FOR    ${character}    IN RANGE    ${characters}
+    : FOR    ${character}    IN     @{characters}
     \    Press Key		${Locator}	${character}
     \    Sleep			1s
