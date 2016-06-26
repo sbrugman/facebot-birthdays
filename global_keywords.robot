@@ -54,3 +54,10 @@ Wait and Count Elements
 Press Enter
     [Arguments]		${Locator}
     Press Key 		${Locator}	\\13
+
+Press Keys
+    [Arguments]		${Locator}	${Text}
+    @{characters}= 	Split String To Characters	${Text}
+    : FOR    ${character}    IN RANGE    ${characters}
+    \    Press Key		${Locator}	${character}
+    \    Sleep			1s

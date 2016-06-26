@@ -13,8 +13,9 @@ Send private message
     [Arguments]		${Name}		${Message}
     Navigate to profile			${Name}
     Wait and click element		//a[text()='Bericht']
-    Wait and Input Text			//div[@class='fbNubFlyoutInner']//textarea		${Message}
-    Press Enter				//div[@class='fbNubFlyoutInner']//textarea
+    Wait and click element		//div[@class='fbNubFlyoutInner']//div[@role='textbox']		
+    Press Keys				//div[@class='fbNubFlyoutInner']//div[@role='textbox']		${Message}
+    Press Enter				//div[@class='fbNubFlyoutInner']//div[@role='textbox']
     Wait and Click Element		//div[@class='fbNubFlyoutInner']//a[contains(@class,'close button')]
 
 Post on wall
