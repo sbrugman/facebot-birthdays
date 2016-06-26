@@ -1,1 +1,1 @@
-28 10 * * * python -m robot birthdays.robot
+28 10 * * * python -m robot --outputdir output/ birthdays.robot

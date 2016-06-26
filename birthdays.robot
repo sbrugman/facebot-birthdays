@@ -17,6 +17,7 @@ Birthday
     \	Run keyword if		${exists}	Append To List		${Names}	${name}
     :FOR	${Name}		IN			@{Names}
     \   Log		${Name}		WARN
-    #\	${Message}=	Generate Birthday Message	${Name}
+    \	${Message}=	Generate Birthday Message	${Name}
+    \ 	Log		${Message}		WARN
     #\   Send private message  	${Name}		${Message}
     [Teardown]		Facebook Teardown

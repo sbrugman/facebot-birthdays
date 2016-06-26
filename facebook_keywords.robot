@@ -68,5 +68,5 @@ ${div birthdays}		//div[@id='events_birthday_view']//div[text()='Vandaag jarig']
 ${input search}			//input[@id='q']
 
 # Global Arguments
-${Username}				[username]			
-${Password}				[password]
+${Username}			[username]			
+${Password}			[password]
