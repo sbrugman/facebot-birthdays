@@ -3,6 +3,7 @@ Facebook-bot in Robot Framework to automatically send birthday congratulations. 
 
 ## Features
 * Automatically congratulates people on their birthday with a message chosen at random.
+* Also can be used to win "poke wars" by automatically poke someone back.
 * Totally uses advanced IT-tools that are used in Software Testing for something way more fun.
 
 ## Background

@@ -20,5 +20,5 @@ Birthday
     \   Log		${Name}		WARN
     \	${Message}=	Generate Birthday Message	${Name}
     \ 	Log		${Message}		WARN
-    #\   Send private message  	${Name}		${Message}
+    \   Send private message  	${Name}		${Message}
     [Teardown]		Facebook Teardown

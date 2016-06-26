@@ -14,6 +14,7 @@ Strip String
 # Setup/Teardown Keywords
 Initialize
     Start Virtual Display    1920    1080
+    Set Selenium Timeout     30s
     Sleep		3s
 	
 Terminate
