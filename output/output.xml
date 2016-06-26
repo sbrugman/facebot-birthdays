@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20160626 18:20:18.587" generator="Robot 3.0 (Python 2.7.6 on linux2)">
+<suite source="/media/simon/Acer/Users/acer 8372/Google Drive/Projecten/Julia/facebot-birthdays/birthdays.robot" id="s1" name="Birthdays">
+<test id="s1-t1" name="Birthday">
+<kw type="setup" name="Facebook Setup" library="facebook_keywords">
+<kw name="Initialize" library="global_keywords">
+<kw name="Start Virtual Display" library="XvfbRobot">
+<doc>Starts virtual display which will be</doc>
+<arguments>
+<arg>1920</arg>
+<arg>1080</arg>
+</arguments>
+<msg timestamp="20160626 18:20:18.852" level="INFO">Using virtual display: '1920x1080x24'</msg>
+<status status="PASS" endtime="20160626 18:20:18.985" starttime="20160626 18:20:18.851"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20160626 18:20:21.988" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20160626 18:20:21.988" starttime="20160626 18:20:18.986"></status>
+</kw>
+<status status="PASS" endtime="20160626 18:20:21.989" starttime="20160626 18:20:18.851"></status>
+</kw>
+<kw name="Open browser to" library="global_keywords">
+<arguments>
+<arg>http://www.facebook.com</arg>
+</arguments>
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${Url}</arg>
+</arguments>
+<msg timestamp="20160626 18:20:21.991" level="INFO">Opening browser 'firefox' to base url 'http://www.facebook.com'</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20160626 18:20:26.073" level="FAIL">No browser is open</msg>
+<status status="FAIL" endtime="20160626 18:20:26.074" starttime="20160626 18:20:26.065"></status>
+</kw>
+<msg timestamp="20160626 18:20:26.074" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No browser is open</msg>
+<msg timestamp="20160626 18:20:26.076" level="FAIL">WebDriverException: Message: The browser appears to have exited before we could connect. If you specified a log_file in the FirefoxBinary constructor, check it for details.
+</msg>
+<status status="FAIL" endtime="20160626 18:20:26.076" starttime="20160626 18:20:21.990"></status>
+</kw>
+<status status="FAIL" endtime="20160626 18:20:26.077" starttime="20160626 18:20:21.989"></status>
+</kw>
+<status status="FAIL" endtime="20160626 18:20:26.077" starttime="20160626 18:20:18.850"></status>
+</kw>
+<kw type="teardown" name="Facebook Teardown" library="facebook_keywords">
+<kw name="Logout" library="facebook_keywords">
+<kw name="Wait and Click Element" library="global_keywords">
+<arguments>
+<arg>${menu arrow}</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>${Locator}</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20160626 18:20:26.083" level="FAIL">No browser is open</msg>
+<status status="FAIL" endtime="20160626 18:20:26.084" starttime="20160626 18:20:26.080"></status>
+</kw>
+<msg timestamp="20160626 18:20:26.084" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No browser is open</msg>
+<msg timestamp="20160626 18:20:26.085" level="FAIL">No browser is open</msg>
+<status status="FAIL" endtime="20160626 18:20:26.085" starttime="20160626 18:20:26.080"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${Locator}</arg>
+</arguments>
+<msg timestamp="20160626 18:20:26.086" level="INFO">Clicking element '//div[@id='userNavigationLabel']'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20160626 18:20:26.089" level="FAIL">No browser is open</msg>
+<status status="FAIL" endtime="20160626 18:20:26.089" starttime="20160626 18:20:26.086"></status>
+</kw>
+<msg timestamp="20160626 18:20:26.089" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No browser is open</msg>
+<msg timestamp="20160626 18:20:26.090" level="FAIL">No browser is open</msg>
+<status status="FAIL" endtime="20160626 18:20:26.090" starttime="20160626 18:20:26.085"></status>
+</kw>
+<status status="FAIL" endtime="20160626 18:20:26.091" starttime="20160626 18:20:26.079"></status>
+</kw>
+<kw name="Wait and Click Element" library="global_keywords">
+<arguments>
+<arg>${link logout}</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>${Locator}</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20160626 18:20:26.095" level="FAIL">No browser is open</msg>
+<status status="FAIL" endtime="20160626 18:20:26.095" starttime="20160626 18:20:26.092"></status>
+</kw>
+<msg timestamp="20160626 18:20:26.095" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No browser is open</msg>
+<msg timestamp="20160626 18:20:26.096" level="FAIL">No browser is open</msg>
+<status status="FAIL" endtime="20160626 18:20:26.096" starttime="20160626 18:20:26.092"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${Locator}</arg>
+</arguments>
+<msg timestamp="20160626 18:20:26.097" level="INFO">Clicking element '//span[text()='Afmelden']'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20160626 18:20:26.100" level="FAIL">No browser is open</msg>
+<status status="FAIL" endtime="20160626 18:20:26.100" starttime="20160626 18:20:26.097"></status>
+</kw>
+<msg timestamp="20160626 18:20:26.100" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No browser is open</msg>
+<msg timestamp="20160626 18:20:26.100" level="FAIL">No browser is open</msg>
+<status status="FAIL" endtime="20160626 18:20:26.101" starttime="20160626 18:20:26.096"></status>
+</kw>
+<status status="FAIL" endtime="20160626 18:20:26.101" starttime="20160626 18:20:26.091"></status>
+</kw>
+<status status="FAIL" endtime="20160626 18:20:26.101" starttime="20160626 18:20:26.079"></status>
+</kw>
+<kw name="Terminate" library="global_keywords">
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20160626 18:20:26.102" starttime="20160626 18:20:26.102"></status>
+</kw>
+<status status="PASS" endtime="20160626 18:20:26.102" starttime="20160626 18:20:26.101"></status>
+</kw>
+<status status="FAIL" endtime="20160626 18:20:26.103" starttime="20160626 18:20:26.078">Several failures occurred:
+
+1) No browser is open
+
+2) No browser is open
+
+3) No browser is open
+
+4) No browser is open</status>
+</kw>
+<timeout value="5 minutes"></timeout>
+<status status="FAIL" endtime="20160626 18:20:26.103" critical="yes" starttime="20160626 18:20:18.849">Setup failed:
+WebDriverException: Message: The browser appears to have exited before we could connect. If you specified a log_file in the FirefoxBinary constructor, check it for details.
+
+
+Also teardown failed:
+Several failures occurred:
+
+1) No browser is open
+
+2) No browser is open
+
+3) No browser is open
+
+4) No browser is open</status>
+</test>
+<status status="FAIL" endtime="20160626 18:20:26.105" starttime="20160626 18:20:18.591"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="1" pass="0">Critical Tests</stat>
+<stat fail="1" pass="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="1" id="s1" name="Birthdays" pass="0">Birthdays</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20160626 18:20:26.074" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No browser is open</msg>
+<msg timestamp="20160626 18:20:26.084" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No browser is open</msg>
+<msg timestamp="20160626 18:20:26.089" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No browser is open</msg>
+<msg timestamp="20160626 18:20:26.095" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No browser is open</msg>
+<msg timestamp="20160626 18:20:26.100" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No browser is open</msg>
+</errors>
+</robot>
