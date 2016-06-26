@@ -15,5 +15,5 @@ Pokes
     \   ${Name}=	Get Text		//div[${iterator}][contains(@id,'poke_live_item_')]//div[@class='_6a _42us']//a
     \	${exists}=	Element Exists		//div[${iterator}][contains(@id,'poke_live_item_')]//a[text()='Terugporren']
     \	Run keyword if		${exists}	Log		${Name}		WARN
-    \	Run keyword if		${exists}	Poke		${Name}
+    \	Run keyword if		${exists}	Wait and click element		//div[${iterator}][contains(@id,'poke_live_item_')]//a[text()='Terugporren']
     [Teardown]		Run keywords		Facebook Teardown
