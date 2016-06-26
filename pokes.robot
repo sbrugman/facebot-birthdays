@@ -1,6 +1,7 @@
 *** Settings ***
 Resource		./global_keywords.robot
 Resource 		./facebook_keywords.robot
+Resource 		./facebook.robot
 
 *** Test Cases ***
 Pokes

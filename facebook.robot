@@ -1,22 +1,6 @@
 *** Settings ***
-Resource		../input/global_keywords.robot
-Resource 		../input/facebook_keywords.robot
-
-*** Test cases ***
-Poke 
-	Facebook Setup
-	Poke 	${Target}
-	Facebook Teardown
-
-Send private message 
-	Facebook Setup
-	Send private message 	${Name}		${Message}
-	Facebook Teardown
-
-Post on wall
-	Facebook Setup
-	Post on wall 	${Name}		${Message}
-	Facebook Teardown
+Resource		./global_keywords.robot
+Resource 		./facebook_keywords.robot
 
 *** Keywords ***
 Poke

@@ -1,1 +1,5 @@
-28 10 * * * python -m robot --outputdir output/ birthdays.robot
+# Congratulate on birthday on 10:28 every day
+28 10 * * * pybot --outputdir output/ birthdays.robot
+
+# Poke back every poke on Friday on 15:28 every week 
+#28 15 * * 5 pybot --outputdir output/ pokes.robot
