@@ -41,7 +41,7 @@ Navigate to profile
     Wait and Input Text			${input search}		${Query}
     Press Enter				${input search}
     ${onProfile}=		Element exists		//a[text()='Tijdlijn']
-    Run keyword unless		${onProfile}		Wait and click element		//a/div/div/div[text()='${Query}']
+    Run keyword unless		${onProfile}		Wait and click element		//a/span[text()='${Query}']
 	
 Facebook Setup
     Initialize
