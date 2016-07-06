@@ -39,7 +39,8 @@ Navigate to all events page
 Navigate to profile
     [Arguments]		${Query}
     Wait and Input Text			${input search}		${Query}
-    Press Enter				${input search}
+    Wait and Click element			//*[@class='search']//*[0][contains(@class, 'user')]
+    #Press Enter				${input search}
     ${onProfile}=		Element exists		//a[text()='Tijdlijn']
     Run keyword unless		${onProfile}		Wait and click element		//a/span[text()='${Query}']
 	
