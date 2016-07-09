@@ -5,7 +5,7 @@ Resource		./facebook.robot
 
 *** Test Cases ***
 Birthday
-    [Timeout]	5m
+    [Timeout]	30m
     [Setup]		Facebook Setup
     Navigate to upcomming events page
     Navigate to all events page
