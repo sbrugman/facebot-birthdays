@@ -13,8 +13,8 @@ Birthday
     @{Names}=		Create List
     :FOR	${iterator}	IN RANGE	${count}
     \	${iterator}=	Evaluate	${iterator}+1
-    \   ${name}=	Get Text	//div[@id='events_birthday_view']//div[text()='Vandaag jarig']/../..//div[${iterator}][@class='clearfix _3ng1']//div[contains(@class,'_3ng2')]//a
-    \	${exists}=	Element Exists		//div[@id='events_birthday_view']//div[text()='Vandaag jarig']/../..//div[${iterator}][@class='clearfix _3ng1']//textarea
+    \   ${name}=	Get Text	(//div[@id='events_birthday_view']//div[text()='Vandaag jarig']/../..//div[@class='clearfix _3ng1'])[${iterator}]//div[contains(@class,'_3ng2')]//a
+    \	${exists}=	Element Exists		(//div[@id='events_birthday_view']//div[text()='Vandaag jarig']/../..//div[@class='clearfix _3ng1'])[${iterator}]//textarea
     \	Run keyword if		${exists}	Append To List		${Names}	${name}
     :FOR	${Name}		IN			@{Names}
     \   Log		${Name}		WARN
