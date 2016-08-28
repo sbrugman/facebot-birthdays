@@ -67,7 +67,3 @@ ${link show all}		//div[@id='pagelet_birthday_this_week']//a[text()='Alles weerg
 ${div pokes}			//div[contains(@id,'poke_live_item_')]
 ${div birthdays}		//div[@id='events_birthday_view']//div[text()='Vandaag jarig']/../..//div[@class='clearfix _3ng1']
 ${input search}			//input[@id='q']
-
-# Global Arguments
-${Username}			[username]			
-${Password}			[password]
