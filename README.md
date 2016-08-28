@@ -13,7 +13,7 @@ Facebook-bot in Robot Framework to automatically send birthday congratulations. 
 Facebot requires Robot Framework (http://robotframework.org/) to work. With Python's `pip`, installation of Robot Framework is a piece of cake:
 `pip install robotframework`
 
-Change the `[username]` and `[password]` in `facebook_functions.robot`.
+Change the `[username]` and `[password]` in the crontab.
 
 Other requirements can be installed with:
 `pip install robotframework-xvfb`
