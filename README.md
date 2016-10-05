@@ -17,7 +17,9 @@ Change the `[username]` and `[password]` in the crontab.
 
 Other requirements can be installed with:
 `pip install robotframework-xvfb`
+
 `pip install robotframework-selenium2library`
+
 `pip install -U selenium`
 
 ## Usage
